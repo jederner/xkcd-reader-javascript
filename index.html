@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XKCD Comic Viewer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="summary">
+            <h2>Technology Used</h2>
+            <p>This application utilizes the following technologies:</p>
+            <ul>
+                <li>HTML5: Structure of the web page</li>
+                <li>CSS3: Styling and layout, ensuring responsive design</li>
+                <li>Google Material Icons: Icons for the control buttons</li>
+                <li>Vanilla JavaScript (ES6): Functionality and logic</li>
+                <li>Fetch API: Retrieving comic data from a JSON endpoint</li>
+                <li>WCAG 2.0: Accessibility standards compliance</li>
+            </ul>
+            <h2>How It Works</h2>
+            <p>This XKCD Comic Viewer application displays XKCD comics with the following features:</p>
+            <ul>
+                <li>Displays the first comic by default</li>
+                <li>Allows navigation between comics using Previous and Next buttons</li>
+                <li>Enables random comic selection with a Random button</li>
+                <li>Ensures accessibility with ARIA labels and live region updates</li>
+                <li>Utilizes CSS transitions for smooth image swapping</li>
+                <li>Keeps a consistent comic display area to prevent UI shifts</li>
+            </ul>
+        </div>
+        <div class="comic-container">
+            <div class="comic-viewer" role="region" aria-live="polite">
+                <img id="comic-img" src="" alt="">
+                <div id="comic-title" class="comic-title"></div>
+            </div>
+            <div class="controls">
+                <button id="prev-btn" class="control-btn" aria-label="Previous comic" disabled>
+                    <i class="material-icons">navigate_before</i>
+                </button>
+                <button id="random-btn" class="control-btn" aria-label="Random comic">
+                    <i class="material-icons">shuffle</i>
+                </button>
+                <button id="next-btn" class="control-btn" aria-label="Next comic" disabled>
+                    <i class="material-icons">navigate_next</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
