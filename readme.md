@@ -26,9 +26,8 @@ To run this project locally using Visual Studio Code and the Live Server extensi
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/xkcd-comic-viewer.git
+   git clone https://github.com/jederner/xkcd-comic-viewer.git
    ```
-   Replace `your-username` with your GitHub username.
 
 2. **Open the Project in Visual Studio Code:**
    - Launch Visual Studio Code.
